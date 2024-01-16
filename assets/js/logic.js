@@ -10,13 +10,16 @@ startQuiz.addEventListener("click", function(event){
 
 })
 
-button.addEventListener("click", function() {
-    if (correct) {
-        button.style.backgroundColor = "green";
-    } else if (incorrect) {
-        button.style.backgroundColor = "red";
-    }
-});
+// //buton color change when answer clicked
+// button.addEventListener("click", function() {
+//     if (correct) {
+//         button.style.backgroundColor = "green";
+//     } else if (incorrect) {
+//         button.style.backgroundColor = "red";
+//     }
+// });
+
+
 
 // timer function
 var secondsLeft = 60;
