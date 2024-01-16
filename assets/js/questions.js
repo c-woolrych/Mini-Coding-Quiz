@@ -26,5 +26,23 @@ function firstQ() {
             choices.appendChild(button);
             }
     } makeButtons()
+}
 
+function secondQ() {
+    question.textContent = ['preventDefault() means the event should not be carried out as it normally would.'];
+    correct = ['False'];
+    incorrect = ['True'];
+
+    function makeButtons() {
+        for (var i=0; i < correct.length; i++) {
+        var button = document.createElement('button');
+        button.innerHTML = correct;
+        choices.appendChild(button);
+        }
+        for (var i=0; i < incorrect.length; i++) {
+            var button = document.createElement('button');
+            button.innerHTML = incorrect;
+            choices.appendChild(button);
+            }
+    } makeButtons()
 }
