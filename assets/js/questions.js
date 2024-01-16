@@ -49,22 +49,33 @@ incorrectA1 = createIncorrectButton1();
         });
 }
 
-
+//function for second question
 function secondQ() {
-    question.textContent = ['preventDefault() means the event should not be carried out as it normally would.'];
+    question.textContent = ['preventDefault() means the event should not be carried out.'];
     correct = ['False'];
     incorrect = ['True'];
 
-    function makeButtons() {
-        for (var i=0; i < correct.length; i++) {
-        button = document.createElement('button');
-        button.innerHTML = correct;
-        choices.appendChild(button);
-        }
-        for (var i=0; i < incorrect.length; i++) {
-            button = document.createElement('button');
-            button.innerHTML = incorrect;
-            choices.appendChild(button);
-            }
-    } makeButtons()
+        // functions for correct answer
+    function createCorrectButton() {
+        correctButton = document.createElement("button");
+        correctButton.textContent = 'False';
+        document.body.append(correctButton);
+        return correctButton;
+    }
+    correctA = createCorrectButton();
+        correctA.addEventListener("click", function() {
+        correctA.style.backgroundColor = "green";
+    });
+
+    //function for incorrect answer
+    function createIncorrectButton() {
+        incorrectButton = document.createElement("button");
+        incorrectButton.textContent = 'True';
+        document.body.append(incorrectButton);
+        return incorrectButton;
+    }
+    incorrectA = createIncorrectButton();
+        incorrectA.addEventListener("click", function() {
+            incorrectA.style.backgroundColor = "red";
+        });
 }
