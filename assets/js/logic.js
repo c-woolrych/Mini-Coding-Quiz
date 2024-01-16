@@ -10,17 +10,6 @@ startQuiz.addEventListener("click", function(event){
 
 })
 
-// //buton color change when answer clicked
-// button.addEventListener("click", function() {
-//     if (correct) {
-//         button.style.backgroundColor = "green";
-//     } else if (incorrect) {
-//         button.style.backgroundColor = "red";
-//     }
-// });
-
-
-
 // timer function
 var secondsLeft = 60;
 
